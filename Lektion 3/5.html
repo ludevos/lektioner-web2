@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Calculator</title>
+</head>
+<body>
+    <script>
+        
+
+        let num1 = prompt("Enter a number: ");
+        let num2 = prompt("Enter another number: ");
+
+        // Check if the inputs are valid numbers
+        // || is or operator, isNaN() checks if the value is not a number, trim() removes whitespace from both ends of a string
+        // === is strict equality operator, checks both value and type
+        if (isNaN(num1) || isNaN(num2) || num1.trim() === "" || num2.trim() === "") {
+            alert("Error: Please enter valid numbers only.");
+        } else {
+            let product = parseFloat(num1) * parseFloat(num2);
+            alert("Product of " + num1 + " and " + num2 + " is: " + product);
+        }
+
+        /*
+        let num1 = prompt("Enter a number: ");
+        let num2 = prompt("Enter another number: ");
+        let product = parseInt(num1) * parseInt(num2);
+        alert("The product of " + num1 + " and " + num2 + " is: " + product);
+        */
+    </script>
+</body>
+</html>
