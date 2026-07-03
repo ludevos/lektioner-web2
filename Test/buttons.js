@@ -16,7 +16,7 @@ window.onload = () => {
     const timeDisplay = document.getElementById('timeDisplay');
 
     timeButton.addEventListener('click', () => {
-    const currentTime = new Date();
+    const currentTime = new Date(); // date() is a built-in object that represents a single moment in time
     timeDisplay.textContent = 'Current time: ' + currentTime.toLocaleTimeString(); 
     });
 
