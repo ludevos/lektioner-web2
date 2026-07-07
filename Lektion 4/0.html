@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control number</title>
+</head>
+<body>
+    <h1>Number checker</h1>
+    <input type="number" id="num" placeholder="Enter a number">
+    <button id="calculateBtn" type="button" onclick="control()">Click me</button>
+    <p id="result"></p>
+
+    <script>
+        function control() {
+            let num = document.getElementById("num").value;
+            let result = document.getElementById("result");
+            
+            if (num > 0) {
+                result.innerHTML = "The number is positive.";
+            } else if (num < 0) {
+                result.innerHTML = "The number is negative.";
+            } else {
+                result.innerHTML = "The number is zero.";
+            }
+        }
+        
+    </script>
+</body>
+</html>
